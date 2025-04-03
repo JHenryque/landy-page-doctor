@@ -1,0 +1,16 @@
+@import url("./header.css");
+@import url("./home.css");
+@import url("./footer.css");
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+}
