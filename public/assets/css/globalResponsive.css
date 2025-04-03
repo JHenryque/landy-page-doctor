@@ -13,5 +13,82 @@ body {
     background-color: #f4f4f4;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1550px) {
+    /*---- banner ----*/
+    .finta-cor {
+        padding-left: 5%;
+    }
+
+    .valores-atendidos {
+        font-size: 1rem;
+    }
+
+    .banner img {
+        right: 5rem;
+    }
+
+    .banner-text {
+        left: 5rem;
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1133px) {
+    /*---- HEADER ----*/
+    .nav_button a {
+        display: none;
+    }
+}
+
+@media (max-width: 930px) {
+    /*---- banner ----*/
+    .banner img {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    /*---- HEADER ----*/
+    .nav_list {
+        display: none;
+    }
+    /*---- banner ----*/
+    .mobile_list {
+        display: none;
+    }
+    .mobile_button i {
+        display: block;
+    }
+
+    .banner-text {
+        left: -1rem;
+    }
+
+    /*---- sobre ----*/
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sobre img {
+        width: 80%;
+        height: 40%;
+    }
+
+    .sobre-text {
+        width: 100%;
+    }
+
+    .sobre-text h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sobre-text h2 {
+        font-size: 1.5rem;
+    }
 }
