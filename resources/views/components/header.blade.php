@@ -8,21 +8,21 @@
                 <a href="{{ route('home') }}">Inicio</a>
             </li>
             <li class="nav_link">
-                <a href="#">Sobre</a>
+                <a href="#sobre">Sobre</a>
             </li>
             <li class="nav_link">
-                <a href="#" >Serviços</a>
+                <a href="#servicos" >Serviços</a>
             </li>
             <li class="nav_link">
-                <a href="#">Depoimento</a>
+                <a href="#faq">Faqs</a>
             </li>
             <li class="nav_link">
-                <a href="#" >Contatato</a>
+                <a href="#contato" >Contatato</a>
             </li>
         </ul>
-        <div class="nav_link nav_button">
-                <a href="#" >AGENDER CONSULTA</a>
-            </div>
+        <div class="nav_button">
+            <a href="{{ route('agendar-contato') }}" >AGENDER CONSULTA</a>
+        </div>
     </nav>
 
     <div class="mobile_button" id="btnmobile"><i class="fa-solid fa-bars"></i></div>
@@ -32,17 +32,19 @@
                 <a href="{{ route('home') }}">Inicio</a>
             </li>
             <li class="m_link">
-                <a href="#">Sobre</a>
+                <a href="#sobre">Sobre</a>
             </li>
             <li class="m_link">
-                <a href="#" >Serviços</a>
+                <a href="#servicos" >Serviços</a>
             </li>
             <li class="m_link">
-                <a href="#">Depoimento</a>
+                <a href="#faq">Faqs</a>
             </li>
             <li class="m_link">
-                <a href="#" >Contatato</a>
+                <a href="#contato" >Contatato</a>
             </li>
+            <a class="nav_button-mobile" href="{{ route('agendar-contato') }}" >AGENDER CONSULTA</a>
         </ul>
+        
     </nav>
 </header>

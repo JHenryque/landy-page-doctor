@@ -1,0 +1,64 @@
+.agConsulta {
+    background-color: var(--cor-azulFusco);
+    width: 100%;
+    height: 89.4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.consulta-page {
+    padding: 0 5%;
+}
+
+.contato-form {
+    width: 40%;
+}
+
+form input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 0 2%;
+    border-radius: 15px;
+    border: 0;
+    margin: 0.5rem 0;
+}
+
+.consulta-form textarea {
+    width: 100%;
+    height: 15rem;
+    border: 0;
+    border-radius: 15px;
+    padding: 1rem 2%;
+    font-size: 1rem;
+    margin: 0.7rem 0;
+    resize: none;
+}
+
+.mesg {
+    color: brown;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form button {
+    width: 50%;
+    height: 2rem;
+    border: 2px solid var(--cor-azulVivo);
+    border-radius: 15px;
+    padding: 0 2%;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: var(--cor-azulVivo);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--cor-azulVivo);
+    border: 0;
+    color: var(--branco);
+}

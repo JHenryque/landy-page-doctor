@@ -6,8 +6,8 @@ main {
 .container_banner {
     display: flex;
     justify-content: center;
-    background-color: #e1eeff;
-    min-height: 700px;
+    background-color: var(--cor-azulFusco);
+    min-height: 800px;
     position: relative;
 }
 
@@ -17,7 +17,7 @@ main {
     right: 0;
     width: 50rem;
     height: 28rem;
-    background-color: #a5ccff;
+    background-color: var(--cor-azulClaro);
     border-top-left-radius: 50rem;
     border-top-right-radius: 50rem;
     border-bottom-right-radius: 5rem;
@@ -32,19 +32,19 @@ main {
     left: 0;
     width: 100%;
     height: 7rem;
-    background-color: #0360d9;
+    background-color: var(--cor-azulVivo);
 }
 
 .valores-atendidos {
     padding: 0 1rem;
     text-align: center;
-    color: #fff;
+    color: var(--branco);
     font-size: 1.7rem;
 }
 
 .valores-atendidos:nth-child(1),
 .valores-atendidos:nth-child(2) {
-    border-right: 1px solid #fff;
+    border-right: 1px solid var(--branco);
 }
 
 .banner img {
@@ -65,49 +65,37 @@ main {
 
 .banner-text h1 {
     font-size: 3rem;
-    color: #0360d9;
+    color: var(--cor-azulVivo);
 }
 
 .banner-text p {
     font-size: 1.5rem;
-    color: #0360d9;
+    color: var(--cor-azulVivo);
 }
 
-.banner-text button {
+.banner-text a button {
     margin-top: 2rem;
     padding: 1rem 2rem;
-    background-color: #0360d9;
-    color: #ffffff;
+    background-color: var(--cor-azulVivo);
+    color: var(--branco);
     cursor: pointer;
     border-radius: 15px;
     font-weight: bold;
     transition: all 0.2s ease;
     border: 0;
+    text-decoration: none;
 }
 
-.banner-text button:hover {
+.banner-text a button:hover {
     background-color: transparent;
-    border: 2px solid #0360d9;
-    color: #0360d9;
-}
-
-.mobile_button i {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    border: 2px solid #084088;
-    border-radius: 10px;
-    color: #084088;
-    display: none;
-}
-
-.nav_mobile {
-    display: none;
+    border: 2px solid var(--cor-azulVivo);
+    color: var(--cor-azulVivo);
 }
 
 /*---- sobre ----*/
 .container-sobre {
     width: 100%;
-    background-color: #a5ccff;
+    background-color: var(--cor-azulClaro);
     padding: 2rem 2%;
 }
 
@@ -136,25 +124,25 @@ main {
 
 .sobre-text h1 {
     font-size: 2.5rem;
-    color: #0360d9;
+    color: var(--cor-azulVivo);
     margin-bottom: 3.5rem;
 }
 
 .sobre-text h2 {
     font-size: 2rem;
-    color: #1d1e1f;
+    color: var(--preto);
 }
 
 .sobre-text p {
     font-size: 1.2rem;
-    color: #424242;
+    color: var(--cinza);
 }
 
 /*----serviços----*/
 .container-servicos {
     width: 100%;
-    background-color: #e1eeff;
-    padding: 2rem 2%;
+    background-color: var(--cor-azulFusco);
+    padding: 2rem 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,52 +150,209 @@ main {
 }
 
 .servicos {
-    max-width: 1200px;
-    min-height: 700px;
+    width: 100%;
+    max-width: 1345px;
+    min-height: 600px;
+    position: relative;
+    overflow: auto;
+    padding: 0 2rem;
 }
 
 .servicos h1 {
     font-size: 2.5rem;
-    color: #0360d9;
+    color: var(--cor-azulVivo);
+    margin: 25px 0;
 }
 
 .servicos h3 {
     font-style: normal;
     font-size: 1.5rem;
     margin-bottom: 3.5rem;
-    color: #424242;
+    color: var(--cinza);
+}
+
+.arrow {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    color: var(--branco);
+    cursor: pointer;
+    background-color: var(--cor-azul-escuro);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    font-size: 1.2rem;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
 }
 
 .cards-servicos {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    max-width: 1280px;
     gap: 1.5rem;
+    overflow: hidden;
+    padding: 1rem;
 }
 
 .card {
-    width: 30%;
-    height: 15rem;
-    background-color: #fff;
+    min-width: 400px;
+    min-height: 300px;
+    background-color: var(--branco);
     border-radius: 15px;
-    padding: 1rem;
-    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    box-shadow: 0px 0px 4px 4px #00000040;
 }
 
 .card i {
     font-size: 3rem;
-    color: #0360d9;
+    color: var(--cor-azulVivo);
     padding: 1rem;
     text-align: center;
 }
 
 .card h2 {
     font-size: 1.5rem;
-    color: #313131;
+    color: var(--cinza);
     text-align: center;
     margin-bottom: 15px;
 }
 
 .card p {
     font-size: 1rem;
-    color: #424242;
+    color: var(--cinza);
+}
+
+/*---- faq ----*/
+.faq-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.faq-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--cor-azulVivo);
+    margin-bottom: 2rem;
+}
+
+.faq-item {
+    background-color: var(--branco);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--cor-azul-ceu);
+    position: relative;
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question::after {
+    content: "−";
+}
+
+.faq-answer {
+    padding: 1rem 1.2rem;
+    display: none;
+    background-color: var(--branco);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/*---- contato ----*/
+
+.container-contato {
+    width: 100%;
+    background-color: var(--cor-azulFusco);
+    padding: 2rem 2%;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0 2rem;
+    margin: 2rem 0;
+}
+
+.container-contato h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0360d9;
+    margin-bottom: 2rem;
+}
+
+.contato-ul {
+    font-size: 1.5rem;
+    align-self: center;
+    margin: 1rem;
+    color: #084088;
+    list-style: none;
+}
+
+.contato-ul li {
+    margin: 1.5rem;
+}
+
+.contato-ul li:nth-child(1) i {
+    color: var(--vermelho-inst);
+    font-size: 2rem;
+    padding-right: 15px;
+}
+
+.contato-ul li:nth-child(2) i {
+    color: var(--verder);
+    font-size: 2rem;
+    padding-right: 15px;
+}
+
+.contato-ul li:nth-child(3) a i {
+    color: var(--roxor);
+    font-size: 2rem;
+    padding-right: 15px;
+}
+
+.contato-ul li:nth-child(4) a i {
+    color: var(--azul-face);
+    font-size: 2rem;
+    padding-right: 15px;
+}
+
+.contato-ul li a {
+    text-decoration: none;
+    color: var(--cor-azul-escuro);
+}
+
+.local h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--cor-azul-escuro);
+    margin-bottom: 1rem;
 }

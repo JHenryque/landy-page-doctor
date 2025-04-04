@@ -1,11 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("./header.css");
 @import url("./home.css");
+@import url("./agendaContanto.css");
 @import url("./footer.css");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --cor-azul-escuro: #084088;
+    --cor-azulClaro: #a5ccff;
+    --cor-azulFusco: #e1eeff;
+    --cor-azulVivo: #0360d9;
+    --cor-azul-ceu: #caf0f8;
+    --preto: #1d1e1f;
+    --cinza: #424242;
+    --branco: #fff;
+    --vermelho-inst: #aa5454;
+    --verder: #1c923a;
+    --roxor: #aa2f77;
+    --azul-face: #201dce;
+    --azul-claro: #4cbbee;
 }
 
 body {
@@ -41,12 +60,29 @@ body {
     .nav_button a {
         display: none;
     }
+
+    /*---- serviços ----*/
+    .cards-servicos {
+        max-width: 1080px;
+    }
+
+    .card {
+        min-width: 250px;
+        min-height: 200px;
+    }
 }
 
 @media (max-width: 930px) {
     /*---- banner ----*/
     .banner img {
         display: none;
+    }
+
+    /*---- contato ----*/
+
+    iframe {
+        width: 100%;
+        height: 400px;
     }
 }
 
@@ -55,10 +91,11 @@ body {
     .nav_list {
         display: none;
     }
-    /*---- banner ----*/
-    .mobile_list {
+    .nav_bar {
         display: none;
     }
+
+    /*---- banner ----*/
     .mobile_button i {
         display: block;
     }
@@ -84,11 +121,46 @@ body {
     }
 
     .sobre-text h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
     .sobre-text h2 {
         font-size: 1.5rem;
+    }
+
+    /*---- serviços ----*/
+
+    .container-servicos {
+        padding: 0;
+    }
+
+    .servicos h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        min-width: 290px;
+        min-height: 200px;
+    }
+
+    /* -- fags---*/
+
+    .faq-section h3 {
+        font-size: 1.5rem;
+    }
+
+    /*---- contato ----*/
+    .contato {
+        flex-direction: column;
+    }
+
+    .container-contato h1 {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
     }
 }

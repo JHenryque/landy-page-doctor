@@ -10,4 +10,9 @@ class MainController extends Controller
     {
         return view('components.home');
     }
+
+    public function agendarContato()
+    {
+        return view('components.agendar-contato');
+    }
 }
